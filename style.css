@@ -7,8 +7,9 @@
 }
 
 body{
-    background-color: black;
+    background-color:black;
     height: 100vh;
+
 }
 
 .contato button{
@@ -17,7 +18,7 @@ body{
     font-weight: 600;
     background-color: #462C7D;
     border: 0;
-    border-radius: 35px;
+    border-radius: 50px;
     cursor: pointer;
     display: inline-block;
     transition: 0.3s;
@@ -100,4 +101,19 @@ section.inicio .txt-inicio p {
     margin: 40px 0;
     font-size: 30px;
     font-style: italic;
+}
+
+section.inicio .img-inicio {
+    border: 0;
+    border-radius: 100px;
+}
+
+/* Estilo do "sobre" */
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .txt-sobre{
+    color: white;
 }
