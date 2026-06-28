@@ -91,7 +91,7 @@ section.inicio .flex{
 }
 
 section.inicio .txt-inicio h1 {
-    background: linear-gradient(to right, #333399, #462C7D);
+    background: linear-gradient(to right, #333399 0%, #462C7D 51%, #333399 100%);
     background-clip: text;
     color: transparent;
     font-size: 40px;
@@ -126,10 +126,10 @@ section.sobre .txt-sobre{
 section.sobre .txt-sobre h2{
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 40px;
     font-family: serif;
     font-weight: bold;
-    background: linear-gradient(to right, #333399, #462C7D);
+    background: linear-gradient(to right, #333399 0%, #462C7D 51%, #333399 100%);
     background-clip: text;
     color: transparent;
 }
@@ -164,7 +164,7 @@ section.projetos h2{
     font-size: 50px;
     font-family: serif;
     font-weight: bold;
-    background: linear-gradient(to right, #333399, #462C7D);
+    background: linear-gradient(to right, #333399 0%, #462C7D 51%, #333399 100%);
     background-clip: text;
     color: transparent;
 }
@@ -211,4 +211,71 @@ section.projetos .img-projetos .overlay{
 
 section.projetos .img-projetos .overlay:hover{
     opacity: 1;
+}
+
+/* Estilo do "contato" */
+
+section.contato {
+    padding: 80xp 4%;
+}
+
+section.contato h2{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: serif;
+    font-weight: bold;
+    background: linear-gradient(to right, #333399 0%, #462C7D 51%, #333399 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+section.contato form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+section.contato form input, form textarea{
+    width: 100%;
+    background-color: rgba(67, 67, 67, 0.355);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+}
+
+section.contato form input::placeholder{
+    color: rgb(119, 119, 119);
+}
+
+section.contato form textarea{
+    resize: none;
+    max-height: 600px;
+}
+
+section.contato form .btn-contato{
+    text-align: center;
+    margin-top: 20px;
+}
+
+section.contato form .btn-contato input{
+    width: 120px;
+    font-weight: 700;
+    font-size: 17px;
+    color: black;
+    background-image: linear-gradient(to right, #333399 0%, #462C7D 51%, #333399 100%);
+    transition: .5s;
+}
+
+section.contato form .btn-contato input:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px #462c7dcf;
 }
